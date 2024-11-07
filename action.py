@@ -62,7 +62,7 @@ def main():
         urlroot += '/'
     if pr_prefix is None:
         pr_prefix = ''
-    url = urlroot + pr_prefix + pull_request
+    url = urlroot + pr_prefix + pull_request + '/'
     message = PREFIX.format(url) + NOTE
 
     comment = None
